@@ -1,0 +1,74 @@
+
+
+body {
+    font-family: "Helvetica Neue" Arial, "Hiragino kaku Gothic ProN";
+    padding-top: 100px;
+}
+
+/*ヘッダー*/
+.ex1 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+figure,
+footer,
+.ex1,
+nav {
+    display: block;
+}
+
+.ex1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.ex1 h1 {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    font-size: 20px;
+}
+
+/*スライドメニュー、スマホ表示用*/
+.ex1 nav.sp_open {
+    right: 0;
+    background: #fff;
+}
+
+.ex1 nav {
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    overflow: auto;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: #fff;
+    background-color: transparent;
+    opacity: 0.9;
+    display: block;
+    transition: right 0.5s;
+}
+
+.ex1 nav ul {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.ex1 nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #666;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
